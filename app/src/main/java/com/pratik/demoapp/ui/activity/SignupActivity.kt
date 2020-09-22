@@ -17,6 +17,7 @@ import com.pratik.demoapp.ui.login.LoginViewModelFactory
 import com.pratik.demoapp.utils.afterTextChanged
 import kotlinx.android.synthetic.main.activity_signup.*
 
+
 class SignupActivity : AppCompatActivity() {
 
 
@@ -97,7 +98,6 @@ class SignupActivity : AppCompatActivity() {
     private fun updateUiWithUser(model: LoggedInUserView) {
         val welcome = getString(R.string.welcome)
         val displayName = model.displayName
-        // TODO : initiate successful logged in experience
         Toast.makeText(
             applicationContext,
             "$welcome $displayName",
@@ -107,9 +107,12 @@ class SignupActivity : AppCompatActivity() {
     }
 
     private fun goToHome() {
-        startActivity(Intent(this, MainActivity::class.java))
-        //Complete and destroy login activity once successful
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        val intent = Intent(this, MainActivity::class.java)
+        intent.addFlags(
+            Intent.FLAG_ACTIVITY_NEW_TASK
+                    or Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        )
+        startActivity(intent)
         finish()
     }
 
