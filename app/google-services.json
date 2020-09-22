@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "520194430488",
+    "firebase_url": "https://demoapp-pratik.firebaseio.com",
+    "project_id": "demoapp-pratik",
+    "storage_bucket": "demoapp-pratik.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520194430488:android:5041a125bfadcadfca556d",
+        "android_client_info": {
+          "package_name": "com.pratik.demoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "520194430488-skkvl4t57v9f2tvinu5v24vn89ci3e07.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDmjZl90xueoWvw8tGK98zEpgFj6eXNek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "520194430488-skkvl4t57v9f2tvinu5v24vn89ci3e07.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
